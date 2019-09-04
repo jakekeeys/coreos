@@ -19,18 +19,7 @@
   },
   "storage": {},
   "systemd": {
-    "units": [
-      {
-        "contents": "[Unit]\nBefore=remote-fs.target\n[Mount]\nWhat=nas.keeys.local:/mnt/array/docker\nWhere=/mnt/nas/docker\nType=nfs\n[Install]\nWantedBy=remote-fs.target",
-        "enable": true,
-        "name": "mnt-nas-docker.mount"
-      },
-      {
-        "contents": "[Unit]\nBefore=remote-fs.target\n[Mount]\nWhat=nas.keeys.local:/mnt/array/media\nWhere=/mnt/nas/media\nType=nfs\n[Install]\nWantedBy=remote-fs.target",
-        "enable": true,
-        "name": "mnt-nas-media.mount"
-      }
-    ]
+    "units": []
   }
 }
 ```
